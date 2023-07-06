@@ -1,146 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,300;0,500;1,500&display=swap');
-        *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        html {
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,300;0,500;1,500&display=swap");
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html {
         font-size: 62.5%;
       }
-      section.haberler {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2.5rem 15rem 2.5rem 15rem;
-            height: 50rem;
-            background-color: #d20f1d;
-            
-        }
-        
-        .haberler h2{
-            font-size: 5rem;
-            text-align: right;
-            letter-spacing: 1rem;
-            font-family: 'Bebas Neue', sans-serif;
-            color: #fff;
-        }
-        .haberler-container{
-            position: relative;
-            max-width: 82rem;
-        }
-        .bazindabiz{
-            border: 2px solid #fff;
-            text-align: right;
-            max-width: 76rem;
-            color: #fff;
-            font-family:'Roboto', sans-serif;
-        }
-        .bazindabiz h3{
-            font-size: 4rem;
-            font-weight: 400;
-         
-        }
-        .bazindabiz p{
-            font-size: 1.5rem;
-        }
-        .bazindabiz-description{
-            padding: 2rem 3rem 2rem 57rem;
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            
-        }
-        .bazindabiz .image-container{
-            position: absolute;
-            max-width: 49rem;
-            top: 0;
-            left: 2rem;
-        }
-        .bazindabiz img{
-            width: 100%;
-        }
-        .bazindabiz-description-button:link, .bazindabiz-description-button:visited,.bazindabiz-description-button:active{
-            color: #d20f1d;
-            padding: 1.4rem 3rem;
-            background-color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 1.3rem;
-        }
-        @media (max-width:754px){
-            html{
-                font-size: 50%;
-            }
-            .bazindabiz .image-container{
-                max-width: 47rem;
-            }
-            
-        }
-        @media (max-width:622px){
-            html{
-                font-size: 40%;
-            }
-            .bazindabiz{
-                display: flex;
-                flex-direction: column;
-        }
-
-    }
-    @media (max-width:503px){
-        html{
-            font-size: 34%;
-        }
-    }
-    @media (max-width:421px){
+      .hakkimizda {
+        max-height: 78rem;
+        /* background-color: red; */
+        padding: 8rem 8rem 6rem 10rem;
+      }
+      .hakkimizda-heading {
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        letter-spacing: 2rem;
+      }
+      .hakkimizda-description {
+        max-width: 112rem;
+        border: 2px solid blue;
+        padding: 5rem 10rem 4rem 3rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      .hakkimizda-description-para {
+        max-width: 45rem;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 1.7rem;
+      }
+      .hakkimizda-img-container {
+        position: absolute;
+        bottom: 1.6rem;
+        right: 1.6rem;
+        max-width: 60rem;
+      }
+      .hakkimizda-img-container img {
+        width: 100%;
+      }
+      .hakkimizda-img-container-clip img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        clip-path: polygon(97% 8%, 100% 0, 100% 100%, 0 100%, 6% 94%, 97% 94%);
+      }
+      @media (max-width:320px){
         html{
             font-size: 30%;
         }
-    }
-    @media (max-width:379px){
+        .hakkimizda-img-container-clip img{
+            max-width: 100%;
+        }
+        .hakkimizda-description{
+            padding: 3rem 4rem 36rem 3rem;
+        }
+      }
+      @media (max-width:320px){
         html{
-            font-size: 35%;
+            font-size: 70%;
         }
-        .bazindabiz-description{
-            padding: 27rem 7rem 1rem 9rem;
-        }
-        section.haberler{
-            height: 79rem;
-        }
-        .bazindabiz .image-container{
-            top: 22px;
-        }
-        .haberler h2{
-            position: absolute;
-            top: -6rem;
-        } 
+      }
+      @media (max-width:1286px){
+          .hakkimizda-description-para {
+            max-width: 35rem;
+          }
 
-    }
-  
+      }
+      @media (max-width:1232px){
+          .hakkimizda-description-para {
+            max-width: 35rem;
+          }
+          .hakkimizda-heading{
+            font-size: 3rem;
+          }
+
+      }
+      @media (max-width:1192px){
+          .hakkimizda-heading{
+            font-size: 2.5rem;
+          }
+          .hakkimizda-description{
+            position: relative;
+          }
+          .hakkimizda-description-para {
+            max-width: 30rem;
+          }
+
+      }
+      
+      @media (max-width:822px){
+    
+        .hakkimizda-description-para{
+            padding: 0rem 0rem 34rem 0rem;
+        }
+
+      }
+      
     </style>
-</head>
-<body>
-    <section class="haberler">
-        <div class="haberler-container">
-            <h2>Haberler</h2>
-            <div class="bazindabiz">
-            <div class="image-container">
-                <img src="./handshake.jpg" alt="bazinga-biz handshake image"/>
+  </head>
+  <body>
+    <section class="hakkimizda">
+      <div class="hakkimizda-container">
+        <h3 class="hakkimizda-heading">hakkimizda</h3>
+        <div class="hakkimizda-description">
+          <div class="hakkimizda-description-para">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea
+              neque, sequi rerum obcaecati, eveniet eaque necessitatibus est vel
+              praesentium, sed ab doloremque nesciunt vitae possimus repudiandae
+              nemo veritatis quam quasi. Magni nisi omnis pariatur!
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea
+              neque, sequi rerum obcaecati, eveniet eaque necessitatibus est vel
+              praesentium, sed ab doloremque nesciunt vitae possimus repudiandae
+              nemo veritatis quam quasi. Magni nisi omnis pariatur!
+            </p>
+          </div>
+          <a href="#">Devamini oku</a>
+        <div class="hakkimizda-container-frame">
+            <div class="hakkimizda-img-container">
+                <img src="./handshake.jpg" alt="" />
             </div>
-            <div class="bazindabiz-description">
-                <h3>Bazinda Biz</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, quisquam. Quos veritatis corrupti deserunt.</p>
-                <a class="bazindabiz-description-button" href="#">Devamini oku</a>
+            <div class="hakkimizda-img-container-clip">
+                <img src="./clipPath.png" alt="clipPath" />
             </div>
         </div>
-    </div>
+        </div>
+      </div>
     </section>
-    
-</body>
+  </body>
 </html>
