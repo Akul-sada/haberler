@@ -5,139 +5,191 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,300;0,500;1,500&display=swap");
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
-      html {
-        font-size: 62.5%;
-      }
-      .hakkimizda {
-        max-height: 78rem;
-        /* background-color: red; */
-        padding: 8rem 8rem 6rem 10rem;
-        
-      }
-      .hakkimizda-heading {
-        font-size: 3.5rem;
-        text-transform: uppercase;
-        letter-spacing: 2rem;
-      }
-      .hakkimizda-description {
-        max-width: 112rem;
-        border: 2px solid blue;
-        padding: 5rem 10rem 4rem 3rem;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-      }
-      .hakkimizda-description-para {
-        max-width: 45rem;
-        text-align: justify;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        font-size: 1.7rem;
-      }
-      .hakkimizda-img-container {
-        position: absolute;
-        bottom: 1.6rem;
-        right: 1.6rem;
-        max-width: 60rem;
-      }
-      .hakkimizda-img-container img {
-        width: 100%;
-      }
-      .hakkimizda-img-container-clip img {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        clip-path: polygon(97% 8%, 100% 0, 100% 100%, 0 100%, 6% 94%, 97% 94%);
-      }
-      .hakkimizda-button {
-        text-decoration: none;
-        color: #fff;
-        background-color: #d20f1d;
-        text-transform: uppercase;
-        width: 15.6rem;
-        padding: 1.2rem;
-      }
+            @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,300;0,500;1,500&display=swap");
+            * {
+              padding: 0;
+              margin: 0;
+              box-sizing: border-box;
+            }
+            html {
+              font-size: 62.5%;
+            }
+            .hakkimizda {
+              max-height: 78rem;
+              padding: 8rem 8rem 6rem 10rem;
 
-      
- 
-      /* 1286px */
-      @media (max-width:80.375em ) {
-        .hakkimizda-description-para {
-          max-width: 35rem;
-        }
-      }
-      /* 1232px */
-      @media (max-width: 77em) {
-        .hakkimizda-description-para {
-          max-width: 35rem;
-        }
-        .hakkimizda-heading {
-          font-size: 3rem;
-        }
-      }
-      /* 1192 */
-      @media (max-width: 74.5em) {
-        .hakkimizda-heading {
-          font-size: 2.5rem;
-        }
-    
-        .hakkimizda-description-para {
-          max-width: 30rem;
-        }
-      }
-      /* 1140px */
-      @media (max-width: 71.250em) {
-        html{
-          font-size: 50%;
-        }
-        
-      }
-      /* 920 */
-      @media (max-width:920px){
-        html{
-          font-size: 40%;
-        }
-        .hakkimizda-img-container-clip img{
-          width: 55rem;
-        }
-      }
-      
-      /* @media (max-width:528px){
-        
-      }
+            }
+            .hakkimizda-heading {
+              font-size: 3.5rem;
+              text-transform: uppercase;
+              letter-spacing: 2rem;
+            }
+            .hakkimizda-description {
+              max-width: 112rem;
+              border: 2px solid blue;
+              padding: 5rem 10rem 4rem 3rem;
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              gap: 2rem;
+            }
+            .hakkimizda-description-para {
+              max-width: 45rem;
+              text-align: justify;
+              display: flex;
+              flex-direction: column;
+              gap: 2rem;
+              font-size: 1.7rem;
+            }
+            .hakkimizda-img-container {
+              position: absolute;
+              bottom: 1.6rem;
+              right: 1.6rem;
+              max-width: 60rem;
+            }
+            .hakkimizda-img-container img {
+              width: 100%;
+            }
+            .hakkimizda-img-container-clip img {
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              clip-path: polygon(97% 8%, 100% 0, 100% 100%, 0 100%, 6% 94%, 97% 94%);
+            }
+            .hakkimizda-button {
+              text-decoration: none;
+              color: #fff;
+              background-color: #d20f1d;
+              text-transform: uppercase;
+              width: 15.6rem;
+              padding: 1.2rem;
+            }
+            /* 1286px */
+            @media (max-width:80.375em ) {
+              .hakkimizda-description-para {
+                max-width: 35rem;
+              }
+            }
+            /* 1232px */
+            @media (max-width: 77em) {
+              .hakkimizda-description-para {
+                max-width: 35rem;
+              }
+              .hakkimizda-heading {
+                font-size: 3rem;
+              }
+            }
+            /* 1192 */
+            @media (max-width: 74.5em) {
+              .hakkimizda-heading {
+                font-size: 2.5rem;
+              }
 
-      @media (max-width: 320px) {
-        html {
-          font-size: 30%;
-        }
-        .hakkimizda-img-container-clip img {
-          max-width: 100%;
-        }
-        .hakkimizda-description {
-          padding: 3rem 4rem 36rem 3rem;
-        }
-      }
-      @media (max-width: 346px) {
-        html {
-          font-size: 30%;
-        }
-        .hakkimizda-img-container-clip img {
-          max-width: 100%;
-        }
-        .hakkimizda-description {
-          padding: 3rem 4rem 36rem 3rem;
-        }
-      } */
+              .hakkimizda-description-para {
+                max-width: 30rem;
+              }
+            }
+            /* 1140px */
+            @media (max-width: 71.250em) {
+              html{
+                font-size: 50%;
+              }
 
-     
+            }
+            /* 920 */
+            @media (max-width:920px){
+              html{
+                font-size: 40%;
+              }
+              .hakkimizda-img-container-clip img{
+                width: 55rem;
+              }
+            }
+
+            @media (max-width:528px){
+
+            }
+
+            @media (max-width: 320px) {
+              html {
+                font-size: 30%;
+              }
+              .hakkimizda-img-container-clip img {
+                max-width: 100%;
+              }
+              .hakkimizda-description {
+                padding: 3rem 4rem 36rem 3rem;
+              }
+            }
+            @media (max-width: 346px) {
+              html {
+                font-size: 34%;
+              }
+              .hakkimizda-img-container-clip img {
+                max-width: 100%;
+              }
+              .hakkimizda-description {
+                padding: 3rem 9rem 36rem 3rem;
+                width: 45rem;
+              }
+              .hakkimizda-description-para{
+                font-size: 1.6rem;
+              }
+            }
+            @media (max-width: 340px) {
+              html {
+                font-size: 37%;
+              }
+              .hakkimizda-img-container-clip img {
+                max-width: 100%;
+              }
+              .hakkimizda-description {
+                padding: 3rem 9rem 36rem 3rem;
+                width: 45rem;
+                height: 64rem;
+              }
+              .hakkimizda-description-para{
+                font-size: 1.6rem;
+              }
+              .hakkimizda {
+                max-height: 78rem;
+                /* background-color: red; */
+                padding: 8rem 8rem 6rem 4rem;
+            }
+          }
+            @media (max-width: 400px) {
+              html {
+                font-size: 37%;
+              }
+              .hakkimizda-img-container-clip img {
+                max-width: 100%;
+              }
+              .hakkimizda-description {
+                padding: 3rem 9rem 36rem 3rem;
+                width: 45rem;
+                height: 65rem;
+              }
+
+              .hakkimizda-description-para{
+                font-size: 1.6rem;
+              }
+              .hakkimizda {
+                max-height: 78rem;
+                /* background-color: red; */
+                padding: 8rem 8rem 6rem 4rem;
+            }
+            .hakkimizda-image-frame img.clip-image img{
+              width: 40rem;
+            }
+            .hakkimizda-img-container {
+              position: absolute;
+              bottom: 1.6rem;
+              right: 1.6rem;
+              max-width: 42rem;
+}
+
+            }
+          
     </style>
   </head>
   <body>
