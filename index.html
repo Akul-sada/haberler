@@ -56,58 +56,73 @@
         right: 0;
         clip-path: polygon(97% 8%, 100% 0, 100% 100%, 0 100%, 6% 94%, 97% 94%);
       }
-      @media (max-width:320px){
-        html{
-            font-size: 30%;
+      @media (max-width: 320px) {
+        html {
+          font-size: 30%;
         }
-        .hakkimizda-img-container-clip img{
-            max-width: 100%;
+        .hakkimizda-img-container-clip img {
+          max-width: 100%;
         }
+        .hakkimizda-description {
+          padding: 3rem 4rem 36rem 3rem;
+        }
+      }
+      @media (max-width: 320px) {
+        html {
+          font-size: 70%;
+        }
+      }
+      @media (max-width: 1286px) {
+        .hakkimizda-description-para {
+          max-width: 35rem;
+        }
+      }
+      @media (max-width: 1232px) {
+        .hakkimizda-description-para {
+          max-width: 35rem;
+        }
+        .hakkimizda-heading {
+          font-size: 3rem;
+        }
+      }
+      @media (max-width: 1192px) {
+        .hakkimizda-heading {
+          font-size: 2.5rem;
+        }
+        .hakkimizda-description {
+          position: relative;
+        }
+        .hakkimizda-description-para {
+          max-width: 30rem;
+        }
+      }
+
+      @media (max-width: 822px) {
+        .hakkimizda-description-para {
+          padding: 0rem 0rem 34rem 0rem;
+        }
+      }
+      @media (max-width:488px){
         .hakkimizda-description{
-            padding: 3rem 4rem 36rem 3rem;
+          width: 35rem;
+          height: 68rem;
+          margin-left: -4rem;
         }
-      }
-      @media (max-width:320px){
-        html{
-            font-size: 70%;
-        }
-      }
-      @media (max-width:1286px){
-          .hakkimizda-description-para {
-            max-width: 35rem;
-          }
-
-      }
-      @media (max-width:1232px){
-          .hakkimizda-description-para {
-            max-width: 35rem;
-          }
-          .hakkimizda-heading{
-            font-size: 3rem;
-          }
-
-      }
-      @media (max-width:1192px){
-          .hakkimizda-heading{
-            font-size: 2.5rem;
-          }
-          .hakkimizda-description{
-            position: relative;
-          }
-          .hakkimizda-description-para {
-            max-width: 30rem;
-          }
-
       }
       
-      @media (max-width:822px){
-    
-        .hakkimizda-description-para{
-            padding: 0rem 0rem 34rem 0rem;
+      @media (max-width: 434px) {
+        .hakkimizda-description {
+          padding: 5rem 1rem 4rem 3rem;
+          width: 35rem;
+          padding: 5rem 1rem 4rem 3rem;
+          height: 64rem;
+          margin-left: -4rem;
         }
 
+        .hakkimizda-description-para {
+          padding: 0rem 0rem 34rem 0rem;
+        }
       }
-      
     </style>
   </head>
   <body>
@@ -130,14 +145,14 @@
             </p>
           </div>
           <a href="#">Devamini oku</a>
-        <div class="hakkimizda-container-frame">
+          <div class="hakkimizda-container-frame">
             <div class="hakkimizda-img-container">
-                <img src="./handshake.jpg" alt="" />
+              <img src="./handshake.jpg" alt="" />
             </div>
             <div class="hakkimizda-img-container-clip">
-                <img src="./clipPath.png" alt="clipPath" />
+              <img src="./clipPath.png" alt="clipPath" />
             </div>
-        </div>
+          </div>
         </div>
       </div>
     </section>
