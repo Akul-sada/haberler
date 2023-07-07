@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-            @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,300;0,500;1,500&display=swap");
+       :root {
+        --image-size: 65rem;
+
+    }
             * {
               padding: 0;
               margin: 0;
@@ -14,19 +17,24 @@
             html {
               font-size: 62.5%;
             }
-            .tyres{
+            .tyers{
               display: flex;
-              padding: 2rem 1rem;
+              align-items: center;
+              justify-content: center;
+            }
+            .tyers-container{
+              display: flex;
+              padding: 2rem 6rem;
             }
             .tyres-container1{
-              max-width: 80rem;
+              max-width: var(--image-size);
               width: 70rem;
             }
             .tyres-container1 img{
               width: 100%;
             }
             .tyres-container2{
-              max-width: 80rem;
+              max-width: var(--image-size);
               width: 70rem;
             }
             .tyres-container2 img{
@@ -39,11 +47,14 @@
   </head>
   <body>
     <section class="tyres">
-      <div class="tyres-container1">
-        <img src="./image.jpg" alt="Image of tyres accesories Side Wallpaltes Container">
-      </div>
-      <div class="tyres-container2">
-        <img src="./proj3Image2.png" alt="Image of tyres accesories Rings Drums Test-Rims Plug">
+      <div class="tyers-container">
+
+        <div class="tyres-container1">
+          <img src="./image.jpg" alt="Image of tyres accesories Side Wallpaltes Container">
+        </div>
+        <div class="tyres-container2">
+          <img src="./proj3Image2.png" alt="Image of tyres accesories Rings Drums Test-Rims Plug">
+        </div>
       </div>
     </section>
   </body>
